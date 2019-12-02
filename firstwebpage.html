@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>
+		My first web page
+		</title>
+
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+
+		<h1> My first web page </h1>
+
+		<h2><a name="section1"> What this is </h2>
+			<p id="firstp" >	A simple page put together using <abbr title="Hypertext Markup Language">HTML </abbr> and <abbr title="Cascading Styles Sheets">CSS</abbr>. 
+				<em> I said a simple page put together using <abbr title="Hypertext Markup Language">HTML </abbr> and <abbr title="Cascading Styles Sheets">CSS</abbr>.</em> 
+			</p>
+
+		<h2><a name="section2"> Why this is </h2>
+			<ul>
+				<li> To learn HTML </li>
+				<li> To show off
+					<ol> 
+						<li> To my boss </li>
+						<li> To my friends </li>
+						<li> To my cat </li>
+						<li> To the little talking duck in my brain </li>
+					</ol>
+				</li>
+				<li> Because I have fallen in love with my computer and want to give her some HTML loving </li>
+			</ul>
+
+		<h2><a name="section3"> Where to find the tutorial </h2>
+			<p>
+			<a href="http://www.htmldog.com/"> 
+			<img src="http://www.htmldog.com/badge1.gif" height="120" width="90" alt="HTML Dog">
+			</a>
+			</p>
+		
+		<h2> Soeme random stuff </h2>
+		<h3> Some random tables </h3>
+			<h4> Normal table </h4>
+				<table>
+				<caption align="bottom"> Just a random table </caption>
+					<tr>
+						<th>Column 1 heading</th>
+						<th>Column 2 heading</th>
+						<th>Column 3 heading</th>
+					</tr>
+					<tr>
+						<td>Row 2, cell 1</td>
+						<td colspan="2">Span 22 23</td>
+					</tr>
+					<tr>
+						<td rowspan="2">span 31 41</td>
+						<td>Row 3, cell 2</td>
+						<td>Row 3, cell 3</td>
+					</tr>
+					<tr>
+						<td>Row 4, cell 2</td>
+						<td>Row 4, cell 3</td>
+					</tr>
+				</table>
+			<h4> Table with colgroup </h4>
+				<table>
+					<colgroup>
+						<col class="colt" align="left"> Name </col>
+						<col class="colt" align="left"> Age </col>
+						<col class="colt" align="left"> Sex </col>
+					</colgroup>
+					<tr>
+						<td> Vasi </td>
+						<td> 18 </td>
+						<td> m </td>
+					</tr>
+					<tr>
+						<td> Basty </td>
+						<td> 18 </td>
+						<td> f  </td>
+					</tr>
+				</table>
+			<h4> Table with header body and footer </h4>
+				<table>
+					<thead>
+						<tr>
+							<td>Header 1</td>
+							<td>Header 2</td>
+							<td>Header 3</td>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>Footer 1</td>
+							<td>Footer 2</td>
+							<td>Footer 3</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td>Cell 1</td>
+							<td>Cell 2</td>
+							<td>Cell 3</td>
+						</tr>
+						<!-- etc. -->
+					</tbody>
+				</table>
+
+		<h3><a name="section4">Some random forms</h3>
+			<p> <strong>Note:</strong> It look the part, but won´t do a damned thing </p>
+			<form action="somescript.php" method="post">
+
+			<p>Name:</p>
+			<p><input type="text" name="name" value="Your name"></p>
+
+			<p> Comments: </p>
+			<p><textarea name="Comments" rows="10" cols="20" > Your comments </textarea></p>
+
+			<p> Are you </p>
+			<p> <input type="radio" name="are you" value="male"> Male </p> 
+			<p> <input type="radio" name="are you" value="female"> Female </p> 
+			<p> <input type="radio" name="are you" value="hermaphrodite"> Hermaphrodite </p> 
+			<p> <input type="radio" name="are you" value="asexual" checked> Asexual </p> 
+
+			<p>
+			<input placeholder="From which country" name="country" list="country_name">
+			<datalist id="country_name">
+				<option value="Afghanistan">
+				<option value="Albania">
+				<option value="Algeria">
+				<option value="Andorra">
+				<option value="Armenia">
+				<option value="Australia">
+				<option value="Austria">
+				<option value="Azerbaijan">
+			</datalist>
+			</p>
+			
+			<p>
+			<select name="options" >
+			<option> Option 1</option>
+			<option> Option 2</option>
+			<option> Option 3 </option>
+			</select>
+			</p>
+			
+			<p>
+			<select name="country" selected="mad">
+			<option value="" selected disabled hidden>Choose here</option>
+			<optgroup label="Africa">
+				<option value="gam">Gambia</option>
+				<option value="mad">Madagascar</option>
+				<option value="nam">Namibia</option>
+			</optgroup>
+			<optgroup label="Europe">
+				<option value="fra">France</option>
+				<option value="rus">Russia</option>
+				<option value="uk">UK</option>
+			</optgroup>
+			<optgroup label="North America">
+				<option value="can">Canada</option>
+				<option value="mex">Mexico</option>
+				<option value="usa">USA</option>
+			</optgroup>
+			</select>
+			</p>
+			
+			<p>
+			<fieldset>
+				<legend>Name</legend>
+				<p>First name <input placeholder="Your first name" name="firstName"></p>
+				<p>Last name <input name="lastName"></p>
+				<p>Age <input type="number" name="years" step="1" min="0" max="200"></p>
+			</fieldset>
+			<fieldset>
+				<legend>Address</legend>
+				<p>Address <textarea name="address"></textarea></p>
+				<p>Postal code <input name="postcode"></p>
+			</fieldset>
+			</p>
+			
+			<p><input type="submit"></p>
+			
+		<h2>Description list example: Some random glossary thing</h2>
+			<dl>
+				<dt>HTML</dt>
+				<dd>Abbreviation for HyperText Markup Language - a language used to make web pages.</dd>
+
+				<dt>Dog</dt>
+				<dd>Any carnivorous animal belonging to the family Canidae.</dd>
+				<dd>The domesticated sub-species of the family Canidae, Canis lupus familiaris.</dd>
+
+				<dt>Moo juice</dt>
+				<dd>Juice made by Moo</dd>
+				<dt>Cat beer</dt>
+				<dd>Beer made out of cats</dd>
+				<dt>Milk</dt>
+				<dd>A white liquid produced by cows and used for human consumption.</dd>
+			</dl>
+			
+		<h2> Editorial example: Ice cream </h2>
+			<p>	I have decided to <del datetime="2013-01-26">decrease</del> 
+				<ins cite="http://www.icecreamforall.com/changeofpolicy/">increase</ins> 
+				the amount of free ice cream that the State will provide for its citizens.
+			</p>
+			
+		<h2> Article example with header and footer </h2>
+			<article>
+				<header>
+					<p>[An introduction]</p>
+				</header>
+				<section id="main_content">
+					<p>[Content]</p>
+				</section>
+				<footer>
+					<p>[End notes]</p>
+				</footer>
+			</article>
+		<footer>
+			<p>[Copyright bumf]</p>
+		</footer>
+		
+		<h2> Figure example: </h2>
+			<figure>
+				<img src="bunny.png" width="200" height="100" class="center">
+				<figcaption>Retarded bunny</figcaption>
+			</figure>
+		
+
+			<nav id="navigation">
+				<ul>
+					<li><a href="#section1">What this is</a></li>
+					<li><a href="#section2">Why this is</a></li>
+					<li><a href="#section3">Where to find the tutorial</a></li>
+					<li><a href="#section4">Some random stuff</a></li>
+				</ul>
+			</nav>
+	</body>
+</html>

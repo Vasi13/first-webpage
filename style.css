@@ -1,0 +1,137 @@
+/* exmaple of CSS properties who allow a string of values replacing the need for a number of properties */
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background: linear-gradient(white, gray);
+    margin: 20px;
+    padding: 0;
+	padding-left: 200px;
+}
+
+
+/* exmaple of ID selector */
+/* example of CSS background */
+#firstp{
+	background: white url(https://www.redrockdecals.com/media/catalog/product/7/0/7005_info.jpg) no-repeat top right;
+	background-size: 50px 50px;
+	font: 14px/1.5 "Times New Roman", times, serif;
+    padding: 30px 10px;
+    border: 1px solid;
+    border-width: 1px 5px 5px 1px;
+    margin: 50px 50px;
+	border-color: red green blue purple;
+	box-shadow:  5px 5px 5px 5px #999;
+}
+
+/* example of pseudo elements */
+p:first-letter{
+	font-weight: bold;
+}
+
+/* example of pseudo elements */
+li:after {
+    content: "!";
+    color: red;
+}
+
+/* example of fixed position */
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+	height: 100%;
+	background-color: #ffcc99;
+}
+
+h1 {
+    color: #ffc;
+    background-color: #900;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 4px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.5em;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5em;
+    border-bottom-color: #c00;
+}
+
+h2 {
+    color: white;
+    background-color: #090;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 2px;
+    padding-left: 14px;
+}
+
+h3 {
+    color: #999;
+    font-size: 1.25em;
+}
+h3 {
+    color: #0;
+    font-size: 1.25em;
+}
+
+img {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #ccc;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+li {
+    color: #900;
+    font-style: italic;
+}
+
+table {
+    background-color: #ccc;
+}
+
+/* if link was not visited then apply properties*/
+a:link{
+	transition: all .5s linear 0;
+	color: hsl(36,50%,50%);
+}
+
+/* if link was  visited then apply properties */
+a:visited {
+	color: green;
+}
+
+/* if something was activated by user then apply properties */
+a:active {
+    color: red;
+}
+
+/* if user hovers over something then apply properties */
+p:hover, a:hover {
+
+    color: hsl(36,100%,50%);
+}
+
+/* if user focuses on something then apply properties */
+input:focus, textarea:focus {
+    color: green;
+}
+
+/* edit col in tables due to colgroup */
+.colt{
+	background-color: yellow;
+	font-weight: bold;
+	font-style: italic;
+}
